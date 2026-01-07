@@ -1,0 +1,120 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+}
+
+/* NAVBAR */
+.dashboard-navbar {
+  height: 60px;
+  background: linear-gradient(135deg, #6f42c1, #4e73df);
+  z-index: 1000;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 230px;
+  height: 100%;
+  background: #fff;
+  padding-top: 20px;
+  border-right: 1px solid #eee;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #f0ebff;
+  color: #6f42c1;
+}
+
+.sidebar .logout {
+  margin-top: 30px;
+  color: #dc3545;
+}
+
+/* CONTENT */
+.content {
+  margin-left: 230px;
+  padding: 90px 30px 30px;
+}
+
+/* CARDS */
+.stat-card {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h6 {
+  color: #666;
+}
+
+.stat-card h3 {
+  color: #6f42c1;
+  font-weight: bold;
+}
+
+.action-card {
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+}
+/* STUDENT PROFILE IN SIDEBAR */
+.sidebar-profile {
+  margin-top: auto;
+  padding: 15px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  font-size: 28px;
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  font-size: 13px;
+}
+
+.profile-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.profile-roll,
+.profile-dept {
+  color: #6b7280;
+  font-size: 12px;
+}
